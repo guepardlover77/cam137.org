@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sciences on cam137</title>
+    <link>http://localhost:1313/categories/sciences/</link>
+    <description>Recent content in Sciences on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <copyright>Mathéo Milley-Arjaliès</copyright>
+    <lastBuildDate>Fri, 11 Jul 2025 10:08:30 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/sciences/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compagnies de bus</title>
+      <link>http://localhost:1313/posts/mail_bus/</link>
+      <pubDate>Fri, 11 Jul 2025 10:08:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/mail_bus/</guid>
+      <description>&lt;p&gt;Je cherchais un moyen de récupérer tous les mails des sociétés de transports de la région Nouvelle-Aquitaine. &lt;!-- raw HTML omitted --&gt;
+Pour ça je suis allé sur le site de la Fédération National des Transports de Voyageurs qui propose un annuaire de leurs adhérents. &lt;!-- raw HTML omitted --&gt;
+Ensuite j&amp;rsquo;ai remarqué qu&amp;rsquo;on pouvait filtrer et, parmi les résultats, cliquer sur &amp;ldquo;voir la fiche&amp;rdquo; pour afficher une petite fenêtre avec les informations de la compagnie. &lt;!-- raw HTML omitted --&gt;
+Le problème c&amp;rsquo;est que l&amp;rsquo;URL ne change pas. Même pas quand on applique des filtres. Vous sentez la douille ? &lt;!-- raw HTML omitted --&gt;
+Naturellement, les boutons &amp;ldquo;Voir la fiche&amp;rdquo; n&amp;rsquo;apparaissent pas dans le code source de la page. Tout se faisait par script JS. &lt;!-- raw HTML omitted --&gt;
+Lorsque le bouton est cliqué, un fichier JS envoie une requête pour récupérer un fichier JSON avec toutes les infos et afficher tout ça correctement. &lt;!-- raw HTML omitted --&gt;
+Le code JS est écrit sur une seule ligne et fait 76848 caractères donc autant vous dire que j&amp;rsquo;irai pas lire le truc. &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Les théorèmes d&#39;incomplétude de Gödel 1/ - Définitions et Peano</title>
+      <link>http://localhost:1313/posts/godel-def_peano/</link>
+      <pubDate>Wed, 11 Jun 2025 11:58:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/godel-def_peano/</guid>
+      <description>&lt;h2 id=&#34;système-formel&#34;&gt;Système formel&lt;/h2&gt;
+&lt;p&gt;Un système formel est une construction mathématique rigoureuse qui vise à capturer et organiser notre raisonnement logique. Il se compose de trois éléments essentiels :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les symboles de base forment l&amp;rsquo;alphabet du système. &lt;!-- raw HTML omitted --&gt;
+Dans un système arithmétique, on trouve par exemple les chiffres 0, 1, 2&amp;hellip;, les opérateurs +, ×, les symboles logiques comme ∧ (et), ∨ (ou), ¬ (non), ainsi que des variables et des quantificateurs ∀ (pour tout) et ∃ (il existe). &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;Les règles de formation déterminent comment construire des formules bien formées à partir de ces symboles. &lt;!-- raw HTML omitted --&gt;
+Elles précisent quelles combinaisons de symboles ont un sens mathématique. Par exemple, &amp;ldquo;∀x (x + 0 = x)&amp;rdquo; est une formule bien formée, tandis que &amp;ldquo;)0 + ∀x(&amp;rdquo; ne l&amp;rsquo;est pas.&lt;/li&gt;
+&lt;li&gt;Les règles d&amp;rsquo;inférence constituent le moteur du raisonnement. &lt;!-- raw HTML omitted --&gt;
+Elles spécifient comment dériver de nouvelles formules à partir de formules déjà établies. Le modus ponens en est l&amp;rsquo;exemple le plus classique : si nous avons &amp;ldquo;A implique B&amp;rdquo; et &amp;ldquo;A&amp;rdquo;, alors nous pouvons conclure &amp;ldquo;B&amp;rdquo;.
+À partir de ces éléments, un système formel distingue deux types de formules : les axiomes, qui sont des vérités admises sans démonstration, et les théorèmes, qui sont des formules dérivées des axiomes par application répétée des règles d&amp;rsquo;inférence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;définitions-clés&#34;&gt;Définitions clés&lt;/h2&gt;
+&lt;h3 id=&#34;complétude-et-incomplétude&#34;&gt;Complétude et incomplétude&lt;/h3&gt;
+&lt;p&gt;Un système formel est dit complet si toute formule bien formée du système est soit démontrable (c&amp;rsquo;est un théorème), soit réfutable (sa négation est un théorème). &lt;!-- raw HTML omitted --&gt;
+En d&amp;rsquo;autres termes, pour toute proposition P du système, soit P soit ¬P est démontrable. &lt;!-- raw HTML omitted --&gt;
+Cette propriété semble naturelle : intuitivement, toute affirmation mathématique devrait être soit vraie soit fausse, et un système parfait devrait pouvoir le déterminer. &lt;!-- raw HTML omitted --&gt;
+L&amp;rsquo;incomplétude désigne précisément l&amp;rsquo;absence de cette propriété : il existe des formules qui ne peuvent être ni démontrées ni réfutées dans le système.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Entropie de Shannon</title>
+      <link>http://localhost:1313/posts/entropie-shannon/</link>
+      <pubDate>Sun, 01 Jun 2025 12:11:55 +0200</pubDate>
+      <guid>http://localhost:1313/posts/entropie-shannon/</guid>
+      <description>&lt;p&gt;L’entropie de Shannon, c’est giga stylé !! J’espère vous plonger dans le même enthousiasme que le mien à la lecture de ceci.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Claude Shannon s’intéressait d’abord à la transmission d’information et a eu l’idée géniale d’introduire le concept d’entropie en informatique. Comme il est détaillé dans mon premier article sur une introduction générale au hasard, l’entropie avait déjà vu le jour en physique et avait déjà eu l’occasion d’engager de vifs débats, notamment entre Albert Einstein et Niels Bohr au congrès de Solvay de 1927.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Le hasard</title>
+      <link>http://localhost:1313/posts/hasard/</link>
+      <pubDate>Sun, 01 Jun 2025 12:11:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/hasard/</guid>
+      <description>&lt;p&gt;C’est un titre sobre qui en cache beaucoup !&lt;/p&gt;
+&lt;h1 id=&#34;définition-du-hasard&#34;&gt;Définition du hasard&lt;/h1&gt;
+&lt;h2 id=&#34;historique&#34;&gt;Historique&lt;/h2&gt;
+&lt;h3 id=&#34;cournot&#34;&gt;Cournot&lt;/h3&gt;
+&lt;p&gt;D’abord, Cournot définissait le hasard comme la rencontre incongrue de deux séries causales bien déterminées. On peut y avoir une peur du hasard dans le sens où celui-ci échappe à la compréhension de certains, mais pas des malins comme Cournot !&lt;/p&gt;
+&lt;p&gt;En effet, puisqu’il s’agit d’un évènement de l’univers, alors il doit bien être déterminé par une cause. Celle-ci étant elle-même déterminée par une autre cause et ainsi de suite. C’est l’idée des séries causales. Et d’après Cournot, c’est lorsque deux séries causales qui n’avaient rien à voir se rencontrent que le hasard naît. Par exemple, la série causale dans laquelle vous réfléchissez à ce que vous allez manger ce soir en marchant dans la rue et d’un coup, en tournant au bout de celle-ci apparait dans votre champ de vision une magnifique boutique de pâtisseries tunisiennes. C’est absurde de ne manger que ça pour le dîner mais si c’est apparu comme ceci c’est alors qu’il y a une raison…&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

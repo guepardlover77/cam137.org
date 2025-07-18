@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Entropie de Shannon | cam137</title>
+<meta name="keywords" content="Hasard, Entropie, Claude Shannon, Théorie de l&#39;information">
+<meta name="description" content="L’entropie de Shannon, c’est giga stylé !! J’espère vous plonger dans le même enthousiasme que le mien à la lecture de ceci.
+Introduction
+Claude Shannon s’intéressait d’abord à la transmission d’information et a eu l’idée géniale d’introduire le concept d’entropie en informatique. Comme il est détaillé dans mon premier article sur une introduction générale au hasard, l’entropie avait déjà vu le jour en physique et avait déjà eu l’occasion d’engager de vifs débats, notamment entre Albert Einstein et Niels Bohr au congrès de Solvay de 1927.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/entropie-shannon/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css" integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/entropie-shannon/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="cam137 (Alt + H)">cam137</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="Catégories">
+                    <span>Catégories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Rechercher">
+                    <span>Rechercher</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="À propos">
+                    <span>À propos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Entropie de Shannon
+    </h1>
+    <div class="post-meta"><span title='2025-06-01 12:11:55 +0200 CEST'>June 1, 2025</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/cover/shannon.jpg" alt="Claude Shannon">
+        <figcaption>Claude Shannon</figcaption>
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                <li>
+                    <a href="#formule" aria-label="Formule">Formule</a></li>
+                <li>
+                    <a href="#exemples" aria-label="Exemples">Exemples</a><ul>
+                        
+                <li>
+                    <a href="#1-lancer-de-pi%c3%a8ce" aria-label="1 lancer de pièce">1 lancer de pièce</a><ul>
+                        
+                <li>
+                    <a href="#cas-th%c3%a9orique" aria-label="Cas théorique">Cas théorique</a></li>
+                <li>
+                    <a href="#cas-th%c3%a9orique-dune-pi%c3%a8ce-truqu%c3%a9e" aria-label="Cas théorique d’une pièce truquée">Cas théorique d’une pièce truquée</a></li>
+                <li>
+                    <a href="#cas-pratique-dune-pi%c3%a8ce-truqu%c3%a9e" aria-label="Cas pratique d’une pièce truquée">Cas pratique d’une pièce truquée</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-lancers-youpiii" aria-label="2 lancers youpiii">2 lancers youpiii</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>L’entropie de Shannon, c’est giga stylé !! J’espère vous plonger dans le même enthousiasme que le mien à la lecture de ceci.</p>
+<h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<p>Claude Shannon s’intéressait d’abord à la transmission d’information et a eu l’idée géniale d’introduire le concept d’entropie en informatique. Comme il est détaillé dans mon premier article sur une introduction générale au hasard, l’entropie avait déjà vu le jour en physique et avait déjà eu l’occasion d’engager de vifs débats, notamment entre Albert Einstein et Niels Bohr au congrès de Solvay de 1927.</p>
+<p>Ici, le concept auquel répond Shannon avec son entropie est le suivant : comment mesurer la quantité d’information produite par une machine ? Claude Shannon a eu la merveilleuse idée de reformuler ceci par “combien de questions est-il nécessaire de poser afin de trouver l’élément suivant d’une chaine de données ?”.</p>
+<p>Ce qui en découle est formidable.</p>
+<p>De combien de bits un ordinateur a besoin pour générer le terme suivant dans une chaine de données ? Et ainsi, quel mot de passe est plus difficile à craquer : “Mdp1234!” ou “HF1$376b” ? Et oui car à chaque caractère de ces strings, dans une idée de bruteforce, on se demande quel sera le suivant.</p>
+<h1 id="formule">Formule<a hidden class="anchor" aria-hidden="true" href="#formule">#</a></h1>
+<p>$$
+\begin{align}
+H(X) &amp;= -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i)
+\text{où } \quad &amp;p(x_i) = \text{probabilité de l&rsquo;événement } x_i
+&amp;n = \text{nombre d&rsquo;événements possibles}
+&amp;H(X) \text{ s&rsquo;exprime en bits}
+\end{align}
+$$</p>
+<h1 id="exemples">Exemples<a hidden class="anchor" aria-hidden="true" href="#exemples">#</a></h1>
+<h2 id="1-lancer-de-pièce">1 lancer de pièce<a hidden class="anchor" aria-hidden="true" href="#1-lancer-de-pièce">#</a></h2>
+<h3 id="cas-théorique">Cas théorique<a hidden class="anchor" aria-hidden="true" href="#cas-théorique">#</a></h3>
+<p>Dans le cas théorique, pour le dire innocemment, c’est très peu prévisible. Il y a une grande place laissée au hasard.</p>
+<p>Alors allons y, tout bêtement, combien de questions doit-on poser, au minimum, pour connaitre le résultat d’un lancer de pièce (pile/face) avec une probabilité égale de faire pile et de faire face ?</p>
+<p>1 question : “est-ce pile ?”. Si oui, alors c’est pile et sinon c’est face. Vous voyez bien que c’est simple ! L’entropie est égale à 1 bit. En effet :</p>
+<p>$$
+H = -(0.5 × log₂(0.5) + 0.5 × log₂(0.5)) = 1 bit
+$$</p>
+<p>Dans ce cas, la théorie colle avec la pratique. En revanche, dans le cas d’une pièce truquée, il y a bien moins de place au “hasard”.</p>
+<h3 id="cas-théorique-dune-pièce-truquée">Cas théorique d’une pièce truquée<a hidden class="anchor" aria-hidden="true" href="#cas-théorique-dune-pièce-truquée">#</a></h3>
+<p>Ici, c’est l’inverse ! Avec une pièce truquée, on est quelque peu certain du résultat qu’on obtiendra. D’autant plus que dans notre exemple ici nous allons choisir une pièce qui a une probabilité de faire pile égale à 0.9 et de faire ça égale à 0.1.</p>
+<p>Alors, combien de questions ? D’après la formule de Shannon :</p>
+<p>$$
+H = -(0.9 × log₂(0.9) + 0.1 × log₂(0.1)) = 0.469 bit
+$$</p>
+<p>Il faut donc 0.469 question pour connaitre le résultat de la pièce truquée ! Il y a donc bien moins de hasard.</p>
+<h3 id="cas-pratique-dune-pièce-truquée">Cas pratique d’une pièce truquée<a hidden class="anchor" aria-hidden="true" href="#cas-pratique-dune-pièce-truquée">#</a></h3>
+<p>En principe, l’entropie sur un unique lancer de pièce, truquée ou pas, doit être égale à 1 car on ne peut pas attribuer de fraction de bit dans l’encodage de Huffman. Pourtant il est bien optimal cet algorithme d’encodage de Huffman, mais surtout sur les blocs assez longs…</p>
+<h2 id="2-lancers-youpiii">2 lancers youpiii<a hidden class="anchor" aria-hidden="true" href="#2-lancers-youpiii">#</a></h2>
+<p>Regardons si notre encodage de Huffman permet de nous rapprocher de la valeur théorique de l’entropie de Shannon sur un lancer de pièce truquée.</p>
+<p>Pour rappel, notre pièce a une probabilité de faire pile (P) de p=9/10 et de faire face (F) de 1/10.</p>
+<p>D’abord, calculons quelques probabilités :</p>
+<ul>
+<li>Probabilité d’obtenir 2 fois pile : $$p² = 0.81$$</li>
+<li>Probabilité d’obtenir pile puis face = Probabilité d’obtenir face puis pile = $$p×(1-p) = 0.09$$</li>
+<li>Probabilité d’obtenir 2 fois face : $$(1-p)² = 0.01$$</li>
+</ul>
+<p>Appliquons l’algorithme d’encodage de Huffman, afin d’optimiser le nombre de questions à poser pour savoir si c’est pile ou face, et établissons un graph comme suit et attribuer les arrêtes de façon à prioriser les évènements qui ont le plus de chance de se produire pour éviter de perdre du temps avec les évènements qui se produiront qu’une fois sur cent.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>                 Racine (1.00)
+</span></span><span style="display:flex;"><span>                /             \
+</span></span><span style="display:flex;"><span>              0/               \1
+</span></span><span style="display:flex;"><span>              /                 \
+</span></span><span style="display:flex;"><span>          PP (0.81)         Nœud (0.19)
+</span></span><span style="display:flex;"><span>                          /           \
+</span></span><span style="display:flex;"><span>                        0/             \1  
+</span></span><span style="display:flex;"><span>                        /               \
+</span></span><span style="display:flex;"><span>                   FP (0.09)        Nœud (0.10)
+</span></span><span style="display:flex;"><span>                                   /         \
+</span></span><span style="display:flex;"><span>                                 0/           \1
+</span></span><span style="display:flex;"><span>                                 /             \
+</span></span><span style="display:flex;"><span>                            PF (0.09)      FF (0.01)
+</span></span></code></pre></div><p>Ainsi, puisque le résultat sera PP dans 81% des situations, autant qu’il soit accessible via 1 bit (= 1 question) seulement et de la même façon, puisque FF se produira seulement dans 1% des cas, autant lui attribuer le plus gros nombre de bits (= le laisser en dernier recourt dans nos questions).</p>
+<p>Nous pouvons donc établir l’encodage de l’information du résultat de la pièce suivant :</p>
+<ul>
+<li>PP = 1 bit</li>
+<li>FP = 2 bits</li>
+<li>PF = 3 bits</li>
+<li>FF = 3 bits</li>
+</ul>
+<p>Et à présent, nous sommes en mesure de calculer l’entropie de Shannon dans cet exemple de deux lancers consécutifs d’une pièce truquée.</p>
+<p>$$
+0.81×1 + 0.09×2 + 0.09×3 + 0.01×3 = 1.29 bits par paire = 0.645 bit par lancer
+$$</p>
+<p>On obtient un résultat bien plus proche de la valeur théorique égale à 0.469 bit que de 1 bit !</p>
+<p>Je vais me motiver à publier un notebook jupyter pour dessiner une jolie courbe et calculer les résultats pour n lancers.</p>
+<hr>
+<p><em>Dernière mise à jour le 01/06/2025</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/hasard/">Hasard</a></li>
+      <li><a href="http://localhost:1313/tags/entropie/">Entropie</a></li>
+      <li><a href="http://localhost:1313/tags/claude-shannon/">Claude Shannon</a></li>
+      <li><a href="http://localhost:1313/tags/th%C3%A9orie-de-linformation/">Théorie De L&#39;information</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© Mathéo Milley-Arjaliès</span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

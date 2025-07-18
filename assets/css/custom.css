@@ -1,0 +1,6 @@
+.home-info {
+    margin-bottom: 1rem !important;  /* Réduit l'espace sous l'accueil */
+}
+main .container-lg {
+    margin-top: 0 !important;        /* Supprime ou réduit l'espace au-dessus des articles */
+}

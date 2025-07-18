@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Aventure on cam137</title>
+    <link>http://localhost:1313/tags/aventure/</link>
+    <description>Recent content in Aventure on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <copyright>Mathéo Milley-Arjaliès</copyright>
+    <lastBuildDate>Fri, 11 Jul 2025 10:08:30 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/aventure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compagnies de bus</title>
+      <link>http://localhost:1313/posts/mail_bus/</link>
+      <pubDate>Fri, 11 Jul 2025 10:08:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/mail_bus/</guid>
+      <description>&lt;p&gt;Je cherchais un moyen de récupérer tous les mails des sociétés de transports de la région Nouvelle-Aquitaine. &lt;!-- raw HTML omitted --&gt;
+Pour ça je suis allé sur le site de la Fédération National des Transports de Voyageurs qui propose un annuaire de leurs adhérents. &lt;!-- raw HTML omitted --&gt;
+Ensuite j&amp;rsquo;ai remarqué qu&amp;rsquo;on pouvait filtrer et, parmi les résultats, cliquer sur &amp;ldquo;voir la fiche&amp;rdquo; pour afficher une petite fenêtre avec les informations de la compagnie. &lt;!-- raw HTML omitted --&gt;
+Le problème c&amp;rsquo;est que l&amp;rsquo;URL ne change pas. Même pas quand on applique des filtres. Vous sentez la douille ? &lt;!-- raw HTML omitted --&gt;
+Naturellement, les boutons &amp;ldquo;Voir la fiche&amp;rdquo; n&amp;rsquo;apparaissent pas dans le code source de la page. Tout se faisait par script JS. &lt;!-- raw HTML omitted --&gt;
+Lorsque le bouton est cliqué, un fichier JS envoie une requête pour récupérer un fichier JSON avec toutes les infos et afficher tout ça correctement. &lt;!-- raw HTML omitted --&gt;
+Le code JS est écrit sur une seule ligne et fait 76848 caractères donc autant vous dire que j&amp;rsquo;irai pas lire le truc. &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

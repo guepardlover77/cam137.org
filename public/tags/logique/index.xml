@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Logique on cam137</title>
+    <link>http://localhost:1313/tags/logique/</link>
+    <description>Recent content in Logique on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <copyright>Mathéo Milley-Arjaliès</copyright>
+    <lastBuildDate>Wed, 11 Jun 2025 11:58:30 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/logique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les théorèmes d&#39;incomplétude de Gödel 1/ - Définitions et Peano</title>
+      <link>http://localhost:1313/posts/godel-def_peano/</link>
+      <pubDate>Wed, 11 Jun 2025 11:58:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/godel-def_peano/</guid>
+      <description>&lt;h2 id=&#34;système-formel&#34;&gt;Système formel&lt;/h2&gt;
+&lt;p&gt;Un système formel est une construction mathématique rigoureuse qui vise à capturer et organiser notre raisonnement logique. Il se compose de trois éléments essentiels :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les symboles de base forment l&amp;rsquo;alphabet du système. &lt;!-- raw HTML omitted --&gt;
+Dans un système arithmétique, on trouve par exemple les chiffres 0, 1, 2&amp;hellip;, les opérateurs +, ×, les symboles logiques comme ∧ (et), ∨ (ou), ¬ (non), ainsi que des variables et des quantificateurs ∀ (pour tout) et ∃ (il existe). &lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;Les règles de formation déterminent comment construire des formules bien formées à partir de ces symboles. &lt;!-- raw HTML omitted --&gt;
+Elles précisent quelles combinaisons de symboles ont un sens mathématique. Par exemple, &amp;ldquo;∀x (x + 0 = x)&amp;rdquo; est une formule bien formée, tandis que &amp;ldquo;)0 + ∀x(&amp;rdquo; ne l&amp;rsquo;est pas.&lt;/li&gt;
+&lt;li&gt;Les règles d&amp;rsquo;inférence constituent le moteur du raisonnement. &lt;!-- raw HTML omitted --&gt;
+Elles spécifient comment dériver de nouvelles formules à partir de formules déjà établies. Le modus ponens en est l&amp;rsquo;exemple le plus classique : si nous avons &amp;ldquo;A implique B&amp;rdquo; et &amp;ldquo;A&amp;rdquo;, alors nous pouvons conclure &amp;ldquo;B&amp;rdquo;.
+À partir de ces éléments, un système formel distingue deux types de formules : les axiomes, qui sont des vérités admises sans démonstration, et les théorèmes, qui sont des formules dérivées des axiomes par application répétée des règles d&amp;rsquo;inférence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;définitions-clés&#34;&gt;Définitions clés&lt;/h2&gt;
+&lt;h3 id=&#34;complétude-et-incomplétude&#34;&gt;Complétude et incomplétude&lt;/h3&gt;
+&lt;p&gt;Un système formel est dit complet si toute formule bien formée du système est soit démontrable (c&amp;rsquo;est un théorème), soit réfutable (sa négation est un théorème). &lt;!-- raw HTML omitted --&gt;
+En d&amp;rsquo;autres termes, pour toute proposition P du système, soit P soit ¬P est démontrable. &lt;!-- raw HTML omitted --&gt;
+Cette propriété semble naturelle : intuitivement, toute affirmation mathématique devrait être soit vraie soit fausse, et un système parfait devrait pouvoir le déterminer. &lt;!-- raw HTML omitted --&gt;
+L&amp;rsquo;incomplétude désigne précisément l&amp;rsquo;absence de cette propriété : il existe des formules qui ne peuvent être ni démontrées ni réfutées dans le système.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

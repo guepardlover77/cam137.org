@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Les théorèmes d&#39;incomplétude de Gödel 1/ - Définitions et Peano | cam137</title>
+<meta name="keywords" content="Kurt Gödel, Logique, Maths">
+<meta name="description" content="Système formel
+Un système formel est une construction mathématique rigoureuse qui vise à capturer et organiser notre raisonnement logique. Il se compose de trois éléments essentiels :
+
+Les symboles de base forment l&rsquo;alphabet du système. 
+Dans un système arithmétique, on trouve par exemple les chiffres 0, 1, 2&hellip;, les opérateurs &#43;, ×, les symboles logiques comme ∧ (et), ∨ (ou), ¬ (non), ainsi que des variables et des quantificateurs ∀ (pour tout) et ∃ (il existe). 
+Les règles de formation déterminent comment construire des formules bien formées à partir de ces symboles. 
+Elles précisent quelles combinaisons de symboles ont un sens mathématique. Par exemple, &ldquo;∀x (x &#43; 0 = x)&rdquo; est une formule bien formée, tandis que &ldquo;)0 &#43; ∀x(&rdquo; ne l&rsquo;est pas.
+Les règles d&rsquo;inférence constituent le moteur du raisonnement. 
+Elles spécifient comment dériver de nouvelles formules à partir de formules déjà établies. Le modus ponens en est l&rsquo;exemple le plus classique : si nous avons &ldquo;A implique B&rdquo; et &ldquo;A&rdquo;, alors nous pouvons conclure &ldquo;B&rdquo;.
+À partir de ces éléments, un système formel distingue deux types de formules : les axiomes, qui sont des vérités admises sans démonstration, et les théorèmes, qui sont des formules dérivées des axiomes par application répétée des règles d&rsquo;inférence.
+
+Définitions clés
+Complétude et incomplétude
+Un système formel est dit complet si toute formule bien formée du système est soit démontrable (c&rsquo;est un théorème), soit réfutable (sa négation est un théorème). 
+En d&rsquo;autres termes, pour toute proposition P du système, soit P soit ¬P est démontrable. 
+Cette propriété semble naturelle : intuitivement, toute affirmation mathématique devrait être soit vraie soit fausse, et un système parfait devrait pouvoir le déterminer. 
+L&rsquo;incomplétude désigne précisément l&rsquo;absence de cette propriété : il existe des formules qui ne peuvent être ni démontrées ni réfutées dans le système.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/godel-def_peano/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.36819bea596090d8b48cf10d9831382996197aa7e4fc86f792f7c08c9ca4d23b.css" integrity="sha256-NoGb6llgkNi0jPENmDE4KZYZeqfk/Ib3kvfAjJyk0js=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/godel-def_peano/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="cam137 (Alt + H)">cam137</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="Catégories">
+                    <span>Catégories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Rechercher">
+                    <span>Rechercher</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="À propos">
+                    <span>À propos</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Les théorèmes d&#39;incomplétude de Gödel 1/ - Définitions et Peano
+    </h1>
+    <div class="post-meta"><span title='2025-06-11 11:58:30 +0200 CEST'>June 11, 2025</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/cover/godel.jpg" alt="Kurt Gödel">
+        <figcaption>Kurt Gödel</figcaption>
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#syst%c3%a8me-formel" aria-label="Système formel">Système formel</a></li>
+                <li>
+                    <a href="#d%c3%a9finitions-cl%c3%a9s" aria-label="Définitions clés">Définitions clés</a><ul>
+                        
+                <li>
+                    <a href="#compl%c3%a9tude-et-incompl%c3%a9tude" aria-label="Complétude et incomplétude">Complétude et incomplétude</a></li>
+                <li>
+                    <a href="#consistance-et-inconsistance" aria-label="Consistance et inconsistance">Consistance et inconsistance</a></li>
+                <li>
+                    <a href="#d%c3%a9cidabilit%c3%a9" aria-label="Décidabilité">Décidabilité</a></li></ul>
+                </li>
+                <li>
+                    <a href="#larithm%c3%a9tique-de-peano-comme-exemple" aria-label="L&rsquo;arithmétique de Peano comme exemple">L&rsquo;arithmétique de Peano comme exemple</a><ul>
+                        
+                <li>
+                    <a href="#les-axiomes-de-peano" aria-label="Les axiomes de Peano">Les axiomes de Peano</a></li>
+                <li>
+                    <a href="#la-conjecture-de-goodstein" aria-label="La conjecture de Goodstein">La conjecture de Goodstein</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="système-formel">Système formel<a hidden class="anchor" aria-hidden="true" href="#système-formel">#</a></h2>
+<p>Un système formel est une construction mathématique rigoureuse qui vise à capturer et organiser notre raisonnement logique. Il se compose de trois éléments essentiels :</p>
+<ul>
+<li>Les symboles de base forment l&rsquo;alphabet du système. <!-- raw HTML omitted -->
+Dans un système arithmétique, on trouve par exemple les chiffres 0, 1, 2&hellip;, les opérateurs +, ×, les symboles logiques comme ∧ (et), ∨ (ou), ¬ (non), ainsi que des variables et des quantificateurs ∀ (pour tout) et ∃ (il existe). <!-- raw HTML omitted --></li>
+<li>Les règles de formation déterminent comment construire des formules bien formées à partir de ces symboles. <!-- raw HTML omitted -->
+Elles précisent quelles combinaisons de symboles ont un sens mathématique. Par exemple, &ldquo;∀x (x + 0 = x)&rdquo; est une formule bien formée, tandis que &ldquo;)0 + ∀x(&rdquo; ne l&rsquo;est pas.</li>
+<li>Les règles d&rsquo;inférence constituent le moteur du raisonnement. <!-- raw HTML omitted -->
+Elles spécifient comment dériver de nouvelles formules à partir de formules déjà établies. Le modus ponens en est l&rsquo;exemple le plus classique : si nous avons &ldquo;A implique B&rdquo; et &ldquo;A&rdquo;, alors nous pouvons conclure &ldquo;B&rdquo;.
+À partir de ces éléments, un système formel distingue deux types de formules : les axiomes, qui sont des vérités admises sans démonstration, et les théorèmes, qui sont des formules dérivées des axiomes par application répétée des règles d&rsquo;inférence.</li>
+</ul>
+<h2 id="définitions-clés">Définitions clés<a hidden class="anchor" aria-hidden="true" href="#définitions-clés">#</a></h2>
+<h3 id="complétude-et-incomplétude">Complétude et incomplétude<a hidden class="anchor" aria-hidden="true" href="#complétude-et-incomplétude">#</a></h3>
+<p>Un système formel est dit complet si toute formule bien formée du système est soit démontrable (c&rsquo;est un théorème), soit réfutable (sa négation est un théorème). <!-- raw HTML omitted -->
+En d&rsquo;autres termes, pour toute proposition P du système, soit P soit ¬P est démontrable. <!-- raw HTML omitted -->
+Cette propriété semble naturelle : intuitivement, toute affirmation mathématique devrait être soit vraie soit fausse, et un système parfait devrait pouvoir le déterminer. <!-- raw HTML omitted -->
+L&rsquo;incomplétude désigne précisément l&rsquo;absence de cette propriété : il existe des formules qui ne peuvent être ni démontrées ni réfutées dans le système.</p>
+<h3 id="consistance-et-inconsistance">Consistance et inconsistance<a hidden class="anchor" aria-hidden="true" href="#consistance-et-inconsistance">#</a></h3>
+<p>La consistance (ou cohérence) d&rsquo;un système signifie qu&rsquo;il ne peut pas démontrer à la fois une formule et sa négation. <!-- raw HTML omitted -->
+Un système consistant ne peut pas prouver que &ldquo;2 + 2 = 4&rdquo; et &ldquo;2 + 2 ≠ 4&rdquo; simultanément. Cette propriété est cruciale car un système inconsistant permet de démontrer n&rsquo;importe quoi, ce qui le rend mathématiquement inutile. <!-- raw HTML omitted -->
+L&rsquo;inconsistance est donc l&rsquo;existence d&rsquo;au moins une formule P telle que le système peut démontrer à la fois P et ¬P. <!-- raw HTML omitted -->
+Cette situation est catastrophique pour un système formel car elle entraîne ce qu&rsquo;on appelle le &ldquo;principe d&rsquo;explosion&rdquo; : de une contradiction, tout peut être déduit.</p>
+<h3 id="décidabilité">Décidabilité<a hidden class="anchor" aria-hidden="true" href="#décidabilité">#</a></h3>
+<p>Un système est décidable s&rsquo;il existe une procédure mécanique (un algorithme) qui, pour toute formule du système, détermine en un nombre fini d&rsquo;étapes si cette formule est un théorème ou non. En gros, si on arrive à se décider. <!-- raw HTML omitted --></p>
+<h2 id="larithmétique-de-peano-comme-exemple">L&rsquo;arithmétique de Peano comme exemple<a hidden class="anchor" aria-hidden="true" href="#larithmétique-de-peano-comme-exemple">#</a></h2>
+<p>L&rsquo;arithmétique de Peano constitue l&rsquo;un des exemples les plus importants de système formel. <!-- raw HTML omitted -->
+Développée par Giuseppe Peano à la fin du XIXe siècle, elle vise à formaliser nos connaissances sur les nombres entiers naturels et leurs opérations.</p>
+<h3 id="les-axiomes-de-peano">Les axiomes de Peano<a hidden class="anchor" aria-hidden="true" href="#les-axiomes-de-peano">#</a></h3>
+<ul>
+<li>Zéro est un nombre naturel : 0 ∈ ℕ</li>
+<li>Tout nombre naturel a un successeur : ∀n ∈ ℕ, ∃s(n) ∈ ℕ</li>
+<li>Zéro n&rsquo;est le successeur d&rsquo;aucun nombre : ∀n ∈ ℕ, s(n) ≠ 0</li>
+<li>Des nombres différents ont des successeurs différents : ∀n,m ∈ ℕ, s(n) = s(m) → n = m</li>
+<li>Principe de récurrence : Si une propriété est vraie pour 0 et que, chaque fois qu&rsquo;elle est vraie pour un nombre n, elle l&rsquo;est aussi pour s(n), alors elle est vraie pour tous les nombres naturels.</li>
+</ul>
+<h3 id="la-conjecture-de-goodstein">La conjecture de Goodstein<a hidden class="anchor" aria-hidden="true" href="#la-conjecture-de-goodstein">#</a></h3>
+<p>D&rsquo;abord, on prend un nombre. Ensuite, on l&rsquo;écrit en base 2. Puis on remplace les 2 par des 3. Et enfin on soustrait 1. <!-- raw HTML omitted -->
+M.Goodstein nous dit que cette séquence commençant par n tend vers 0 pour tout n. <!-- raw HTML omitted -->
+Cet exemple est troublant parce qu&rsquo;elle a été démontrée vraie en 1982 mais sa démonstration a nécessité l&rsquo;utilisation de l&rsquo;induction transfinie sur des ordinaux bien au-delà de ce que peut exprimer l&rsquo;arithmétique de Peano. <!-- raw HTML omitted -->
+Rien que ça.</p>
+<hr>
+<p>L&rsquo;arithmétique de Peano peut exprimer des concepts mathématiques très sophistiqués.
+Elle peut définir l&rsquo;addition, la multiplication, les relations d&rsquo;ordre, et même encoder des notions complexes comme la primalité d&rsquo;un nombre ou la conjecture de Goldbach. <!-- raw HTML omitted -->
+Cette richesse expressive est précisément ce qui rend l&rsquo;arithmétique de Peano vulnérable aux théorèmes de Gödel. Sa capacité à &ldquo;parler d&rsquo;elle-même&rdquo; - propriété que nous explorerons avec la numérotation de Gödel - est à la fois sa force et sa faiblesse. <!-- raw HTML omitted --></p>
+<p><em>Dernière mise à jour le 11/07/2025</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/kurt-g%C3%B6del/">Kurt Gödel</a></li>
+      <li><a href="http://localhost:1313/tags/logique/">Logique</a></li>
+      <li><a href="http://localhost:1313/tags/maths/">Maths</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>© Mathéo Milley-Arjaliès</span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+baseURL: https://cam137.org/
+languageCode: fr-fr
+title: cam137
+copyright: "© Mathéo Milley-Arjaliès"
+theme: PaperMod
+
+menu:
+  main:
+    - name: À propos
+      url: /about/
+      weight: 10
+    - name: Rechercher
+      url: /search/
+      weight: 10
+    - name: Tags
+      url: /tags/
+      weight: 10
+    - name: Catégories
+      url: /categories/
+      weight: 10
+taxonomies:
+  tag: tags
+  category: categories
+params:
+  customCSS:
+    - /css/custom.css
+  assets:
+    favicon: "/favicon.ico"
+  homeInfoParams:
+    Title: Bienvenue !
+    Content: >
+     Blog personnel qui peut aller des dinosaures à la théorie de la médiation en passant par les méthodes de construction des châteaux forts.
+     C'est dans l'ennui qu'on fait les plus belles trouvailles avec soi-même.
+  ShowToc: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Physique on cam137</title>
+    <link>http://localhost:1313/tags/physique/</link>
+    <description>Recent content in Physique on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <copyright>Mathéo Milley-Arjaliès</copyright>
+    <lastBuildDate>Sun, 01 Jun 2025 12:11:30 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/physique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le hasard</title>
+      <link>http://localhost:1313/posts/hasard/</link>
+      <pubDate>Sun, 01 Jun 2025 12:11:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/hasard/</guid>
+      <description>&lt;p&gt;C’est un titre sobre qui en cache beaucoup !&lt;/p&gt;
+&lt;h1 id=&#34;définition-du-hasard&#34;&gt;Définition du hasard&lt;/h1&gt;
+&lt;h2 id=&#34;historique&#34;&gt;Historique&lt;/h2&gt;
+&lt;h3 id=&#34;cournot&#34;&gt;Cournot&lt;/h3&gt;
+&lt;p&gt;D’abord, Cournot définissait le hasard comme la rencontre incongrue de deux séries causales bien déterminées. On peut y avoir une peur du hasard dans le sens où celui-ci échappe à la compréhension de certains, mais pas des malins comme Cournot !&lt;/p&gt;
+&lt;p&gt;En effet, puisqu’il s’agit d’un évènement de l’univers, alors il doit bien être déterminé par une cause. Celle-ci étant elle-même déterminée par une autre cause et ainsi de suite. C’est l’idée des séries causales. Et d’après Cournot, c’est lorsque deux séries causales qui n’avaient rien à voir se rencontrent que le hasard naît. Par exemple, la série causale dans laquelle vous réfléchissez à ce que vous allez manger ce soir en marchant dans la rue et d’un coup, en tournant au bout de celle-ci apparait dans votre champ de vision une magnifique boutique de pâtisseries tunisiennes. C’est absurde de ne manger que ça pour le dîner mais si c’est apparu comme ceci c’est alors qu’il y a une raison…&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

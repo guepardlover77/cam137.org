@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hasard on cam137</title>
+    <link>http://localhost:1313/tags/hasard/</link>
+    <description>Recent content in Hasard on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <copyright>Mathéo Milley-Arjaliès</copyright>
+    <lastBuildDate>Sun, 01 Jun 2025 12:11:55 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hasard/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entropie de Shannon</title>
+      <link>http://localhost:1313/posts/entropie-shannon/</link>
+      <pubDate>Sun, 01 Jun 2025 12:11:55 +0200</pubDate>
+      <guid>http://localhost:1313/posts/entropie-shannon/</guid>
+      <description>&lt;p&gt;L’entropie de Shannon, c’est giga stylé !! J’espère vous plonger dans le même enthousiasme que le mien à la lecture de ceci.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Claude Shannon s’intéressait d’abord à la transmission d’information et a eu l’idée géniale d’introduire le concept d’entropie en informatique. Comme il est détaillé dans mon premier article sur une introduction générale au hasard, l’entropie avait déjà vu le jour en physique et avait déjà eu l’occasion d’engager de vifs débats, notamment entre Albert Einstein et Niels Bohr au congrès de Solvay de 1927.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Le hasard</title>
+      <link>http://localhost:1313/posts/hasard/</link>
+      <pubDate>Sun, 01 Jun 2025 12:11:30 +0200</pubDate>
+      <guid>http://localhost:1313/posts/hasard/</guid>
+      <description>&lt;p&gt;C’est un titre sobre qui en cache beaucoup !&lt;/p&gt;
+&lt;h1 id=&#34;définition-du-hasard&#34;&gt;Définition du hasard&lt;/h1&gt;
+&lt;h2 id=&#34;historique&#34;&gt;Historique&lt;/h2&gt;
+&lt;h3 id=&#34;cournot&#34;&gt;Cournot&lt;/h3&gt;
+&lt;p&gt;D’abord, Cournot définissait le hasard comme la rencontre incongrue de deux séries causales bien déterminées. On peut y avoir une peur du hasard dans le sens où celui-ci échappe à la compréhension de certains, mais pas des malins comme Cournot !&lt;/p&gt;
+&lt;p&gt;En effet, puisqu’il s’agit d’un évènement de l’univers, alors il doit bien être déterminé par une cause. Celle-ci étant elle-même déterminée par une autre cause et ainsi de suite. C’est l’idée des séries causales. Et d’après Cournot, c’est lorsque deux séries causales qui n’avaient rien à voir se rencontrent que le hasard naît. Par exemple, la série causale dans laquelle vous réfléchissez à ce que vous allez manger ce soir en marchant dans la rue et d’un coup, en tournant au bout de celle-ci apparait dans votre champ de vision une magnifique boutique de pâtisseries tunisiennes. C’est absurde de ne manger que ça pour le dîner mais si c’est apparu comme ceci c’est alors qu’il y a une raison…&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

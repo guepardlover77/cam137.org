@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on cam137</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 18 Jul 2025 10:12:58 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mon article</title>
+      <link>http://localhost:1313/art/eglises/</link>
+      <pubDate>Fri, 18 Jul 2025 10:12:58 +0200</pubDate>
+      <guid>http://localhost:1313/art/eglises/</guid>
+      <description>&lt;h2 id=&#34;de-la-forteresse-de-dieu-au-vaisseau-de-lumière&#34;&gt;De la forteresse de Dieu au vaisseau de lumière&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;art roman concevait l&amp;rsquo;église comme forteresse spirituelle face à un monde hostile.
+Ses murs épais, ses fenêtres rares, ses sculptures parfois terrifiantes évoquaient un christianisme de combat.
+L&amp;rsquo;art gothique propose une vision plus optimiste : l&amp;rsquo;église devient antichambre du paradis, préfiguration de la Jérusalem céleste. &lt;!-- raw HTML omitted --&gt;
+Cette évolution reflète les transformations de la société médiévale.
+L&amp;rsquo;an mil passé sans apocalypse, les croisades élargissant les horizons, l&amp;rsquo;économie urbaine florissante : l&amp;rsquo;Europe du XIIe siècle regardait l&amp;rsquo;avenir avec confiance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

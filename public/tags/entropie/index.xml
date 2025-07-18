@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Entropie on cam137</title>
+    <link>http://localhost:1313/tags/entropie/</link>
+    <description>Recent content in Entropie on cam137</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>fr-fr</language>
+    <copyright>Mathéo Milley-Arjaliès</copyright>
+    <lastBuildDate>Sun, 01 Jun 2025 12:11:55 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/entropie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entropie de Shannon</title>
+      <link>http://localhost:1313/posts/entropie-shannon/</link>
+      <pubDate>Sun, 01 Jun 2025 12:11:55 +0200</pubDate>
+      <guid>http://localhost:1313/posts/entropie-shannon/</guid>
+      <description>&lt;p&gt;L’entropie de Shannon, c’est giga stylé !! J’espère vous plonger dans le même enthousiasme que le mien à la lecture de ceci.&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Claude Shannon s’intéressait d’abord à la transmission d’information et a eu l’idée géniale d’introduire le concept d’entropie en informatique. Comme il est détaillé dans mon premier article sur une introduction générale au hasard, l’entropie avait déjà vu le jour en physique et avait déjà eu l’occasion d’engager de vifs débats, notamment entre Albert Einstein et Niels Bohr au congrès de Solvay de 1927.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
