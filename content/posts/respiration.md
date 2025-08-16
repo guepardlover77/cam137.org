@@ -2,6 +2,8 @@
 date = '2025-08-16T09:28:12+02:00'
 draft = false
 title = 'Respiration'
+tags = ["Neurologie", "Psychiatrie"]
+category = ["Science"]
 +++
 
 # Comment ça marche ?
