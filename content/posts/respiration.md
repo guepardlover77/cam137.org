@@ -15,14 +15,14 @@ Le système autonome correspond à toute la machinerie qui régule inconsciemmen
 ### Système sympathique
 D'abord on a le système nerveux sympathique qui est un vestige de nos ancêtres animaux. C'est le mode alerte, le mode urgence.
 Dans ce mode on va avoir 
-- un déclenchement de la réponse de stress [*flight or fight*](https://en.wikipedia.org/wiki/Fight-or-flight_response)
+- un déclenchement de la réponse de stress [*fight or flight*](https://en.wikipedia.org/wiki/Fight-or-flight_response)
 - une accélération du rythme cardiaque et de la respiration pour mettre en action les muscles rapidement si besoin
 - une augmentation de la tension artérielle
 - une libération de cortisol et d'adrénaline 
 - une réduction de la digestion pour mobiliser l'énergie dans les fonctions vitales
 - une dilatation des pupilles pour améliorer la vision
 
-![Exemple de *flight or fight*](/images/sciences/fight_or_flight.jpg)
+![Exemple de *fight or flight*](/images/sciences/fight_or_flight.jpg)
 Exemple de *flight or fight*
 
 
