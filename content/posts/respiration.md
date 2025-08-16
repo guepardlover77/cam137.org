@@ -15,12 +15,16 @@ Le système autonome correspond à toute la machinerie qui régule inconsciemmen
 ### Système sympathique
 D'abord on a le système nerveux sympathique qui est un vestige de nos ancêtres animaux. C'est le mode alerte, le mode urgence.
 Dans ce mode on va avoir 
-- un déclenchement de la réponse de stress (_flight or fight_)[https://en.wikipedia.org/wiki/Fight-or-flight_response] (insérer une image)
+- un déclenchement de la réponse de stress [*flight or fight*](https://en.wikipedia.org/wiki/Fight-or-flight_response)
 - une accélération du rythme cardiaque et de la respiration pour mettre en action les muscles rapidement si besoin
 - une augmentation de la tension artérielle
 - une libération de cortisol et d'adrénaline 
 - une réduction de la digestion pour mobiliser l'énergie dans les fonctions vitales
 - une dilatation des pupilles pour améliorer la vision
+
+[Exemple de *flight or fight*](!/images/sciences/flight_or_fight.jpg)
+Exemple de *flight or fight*
+
 
 ### Système parasympathique
 On a ensuite le deuxième mode que nous offre le système nerveux autonome, c'est le mode parasympathique.
@@ -54,7 +58,7 @@ On a une validation scientifique de cela : une étude contrôlée sur 30 patient
 - une augmentation significative des niveaux de GABA thalamique (mesurée par spectroscopie)
 - amélioration corrélée de la variabilité de la fréquence cardiaque
 - réduction proportionnelle des symptômes dépressifs
-Retrouvez cette étude (ici)[https://www.psychiatrictimes.com/view/neurobiology-and-neurophysiology-breath-practices-psychiatric-care].
+Retrouvez cette étude [ici](https://www.psychiatrictimes.com/view/neurobiology-and-neurophysiology-breath-practices-psychiatric-care).
 
 ### Variabilité de la fréquence cardiaque
 
@@ -99,7 +103,7 @@ On peut l'utiliser pour :
 # Les données de l'efficacité clinique
 
 ## La méta analyse de référence de 2023
-Cliquer (ici)[https://www.nature.com/articles/s41598-022-27247-y] pour y accéder.
+Cliquer [ici](https://www.nature.com/articles/s41598-022-27247-y) pour y accéder.
 
 Les auteurs se sont vraiment pas tourné les pouces, l'article analyse 12 études randomisées contrôlées pour le stress, soit 785 participants.
 C'est 26 études au total incluant anxiété et dépression et c'est une recherche exhaustive dans 7 bases de données.
