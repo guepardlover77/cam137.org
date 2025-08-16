@@ -67,9 +67,9 @@ L'activation parasympathique déclenche :
 - une augmentation de l'ocytocine -> "hormone de l'attachement", favorisant la connexion sociale et réduisant l'inflammation
 - une optimisation des neurotransmetteurs -> sérotonine (humeur), dopamine (motivation), noradrénaline (attention équilibrée)
 
-## Quelques techniques reconnues
+# Quelques techniques reconnues
 
-### 1. Qi Gong 4-4-6-2
+## 1. Qi Gong 4-4-6-2
 Cette technique est particulièrement efficace sur les crises d'anxiété aiguë (on observe un effet en 2-3 minutes), des colères intenses ou des idées suicidaires.
 
 - 4 temps d'inspiration
@@ -77,7 +77,7 @@ Cette technique est particulièrement efficace sur les crises d'anxiété aiguë
 - 6 temps d'expiration
 - 2 temps de pause poumons vides
 
-### 2. Respiration cohérente
+## 2. Respiration cohérente
 Celle-ci est plus destinée à se faire quotidiennement.
 On peut la faire les yeux ouverts en marchant par exemple.
 
@@ -85,7 +85,7 @@ On peut la faire les yeux ouverts en marchant par exemple.
 - 5 secondes d'expiration nasale douce
 - Pas de pause, respiration naturelle
 
-### 3. Breath Moving
+## 3. Breath Moving
 C'est une technique plus avancée dont le principe est plus profond.
 On va chercher une visualisation du souffle circulant dans le corps avec attention dirigée vers différentes zones anatomiques.
 
@@ -94,9 +94,9 @@ On peut l'utiliser pour :
 - gestion de la douleur chronique
 - traitement du trauma avec approche somatique
 
-## Les données de l'efficacité clinique
+# Les données de l'efficacité clinique
 
-### La méta analyse de référence de 2023
+## La méta analyse de référence de 2023
 Cliquer (ici)[https://www.nature.com/articles/s41598-022-27247-y] pour y accéder.
 
 Les auteurs se sont vraiment pas tourné les pouces, l'article analyse 12 études randomisées contrôlées pour le stress, soit 785 participants.
