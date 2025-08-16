@@ -22,7 +22,7 @@ Dans ce mode on va avoir
 - une réduction de la digestion pour mobiliser l'énergie dans les fonctions vitales
 - une dilatation des pupilles pour améliorer la vision
 
-![Exemple de *flight or fight*](/images/sciences/flight_or_fight.jpg)
+![Exemple de *flight or fight*](/images/sciences/fight_or_flight.jpg)
 Exemple de *flight or fight*
 
 
