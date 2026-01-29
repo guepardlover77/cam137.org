@@ -6,18 +6,21 @@ theme: PaperMod
 
 menu:
   main:
+    - name: Applications
+      url: /applications/
+      weight: 5
     - name: À propos
       url: /about/
       weight: 10
     - name: Rechercher
       url: /search/
-      weight: 10
+      weight: 15
     - name: Tags
       url: /tags/
-      weight: 10
+      weight: 20
     - name: Catégories
       url: /categories/
-      weight: 10
+      weight: 25
 taxonomies:
   tag: tags
   category: categories
