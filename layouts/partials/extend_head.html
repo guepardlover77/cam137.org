@@ -1,0 +1,24 @@
+{{- if .Params.math }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var script = document.createElement("script");
+    script.src = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js";
+    script.onload = function() {
+      var autoRender = document.createElement("script");
+      autoRender.src = "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js";
+      autoRender.onload = function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$",  right: "$",  display: false}
+          ],
+          throwOnError: false
+        });
+      };
+      document.head.appendChild(autoRender);
+    };
+    document.head.appendChild(script);
+  });
+</script>
+{{- end }}
